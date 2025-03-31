@@ -1,0 +1,808 @@
+/* 
+* Rolsa Technologies - Main Stylesheet
+* Contains all styling for the Rolsa Technologies website
+*/
+
+/*--------------------------------------------------------------
+# Variables & Root Settings
+--------------------------------------------------------------*/
+:root {
+    --yellow: #ECA400;
+    --light-bg: #F5F0F6;
+    --dark-blue: #16262E;
+    --green: #0B6E4F;
+    --light-green: #C7F2A7;
+}
+
+*{
+    scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# Base Elements
+--------------------------------------------------------------*/
+body {
+    background-color: var(--light-bg);
+    color: var(--dark-blue);
+    border: none;
+}
+
+/*--------------------------------------------------------------
+# Custom Brand Colors
+--------------------------------------------------------------*/
+.bg-brand-green {
+    background-color: var(--green) !important;
+}
+
+.bg-brand-light {
+    background-color: var(--light-bg) !important;
+}
+
+.bg-brand-dark {
+    background-color: var(--dark-blue) !important;
+}
+
+.bg-brand-yellow {
+    background-color: var(--yellow) !important;
+}
+
+.bg-brand-light-green {
+    background-color: var(--light-green) !important;
+}
+
+.text-brand-green {
+    color: var(--green) !important;
+}
+
+.text-brand-yellow {
+    color: var(--yellow) !important;
+}
+
+.text-brand-dark {
+    color: var(--dark-blue) !important;
+}
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+.btn-brand-primary {
+    background-color: var(--green);
+    color: white;
+    border: none;
+}
+
+.btn-brand-primary:hover {
+    background-color: #095a41;
+    color: white;
+}
+
+.btn-brand-secondary {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    border: none;
+}
+
+.btn-brand-secondary:hover {
+    background-color: #d69200;
+    color: var(--dark-blue);
+}
+
+.btn-brand-secondary:hover {
+    background-color: #d69200;
+    color: var(--dark-blue);
+}
+
+/*--------------------------------------------------------------
+# Navigation Bar
+--------------------------------------------------------------*/
+.navbar {
+    background-color: var(--light-bg) !important;
+    padding: 15px 0;
+}
+
+.container-fluid {
+    padding-left: 15px;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: 120px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: var(--dark-blue) !important;
+    font-weight: 500;
+    margin: 0 20px;
+}
+
+.nav-link:hover {
+    color: var(--green) !important;
+    opacity: 0.8;
+}
+
+/* Button Styles in Nav */
+.my-account-btn {
+    background-color: var(--yellow);
+    color: var(--dark-blue) !important;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: all 0.3s ease !important;
+}
+
+.my-account-btn:hover {
+    background-color: #d69200;
+    color: var(--dark-blue) !important;
+    opacity: 0.9;
+}
+
+.consultation-btn {
+    background-color: var(--dark-blue);
+    color: white !important;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.consultation-btn:hover {
+    background-color: #243c47;
+    color: white !important;
+    opacity: 0.9;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-logo {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-description {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: var(--light-green);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--yellow);
+}
+
+.contact-info {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-info i {
+    color: var(--yellow);
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #243c47;
+    color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: var(--green);
+}
+
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Alternative Footer Social Icons */
+.footer-social {
+    width: 36px;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+}
+
+.footer-social:hover {
+    background-color: var(--green);
+}
+
+/*--------------------------------------------------------------
+# Page Headers
+--------------------------------------------------------------*/
+.page-header {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    color: white;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(11, 110, 79, 0.85);
+}
+
+.header-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Why Go Green Header */
+.why-go-green-header {
+    background-image: url('https://solarplanet.uk/wp-content/uploads/2023/10/Solar-Panels-on-Metal-Roofs.jpg');
+}
+
+/* About Page Header */
+.about-header {
+    background-image: url('https://solarplanet.uk/wp-content/uploads/2023/10/Solar-Panels-on-Metal-Roofs.jpg');
+}
+
+/*--------------------------------------------------------------
+# Why Go Green Page Styles
+--------------------------------------------------------------*/
+/* Comparison Table */
+.comparison-table th {
+    background-color: var(--dark-blue);
+    color: white;
+    font-weight: 600;
+}
+
+.check-icon {
+    color: var(--green);
+    font-size: 1.25rem;
+}
+
+.x-icon {
+    color: #e74c3c;
+    font-size: 1.25rem;
+}
+
+/* Benefits Cards */
+.benefit-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.benefit-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-green);
+    color: var(--green);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+/* Impact List */
+.impact-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.impact-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-left: 2rem;
+}
+
+.impact-list li:last-child {
+    border-bottom: none;
+}
+
+.impact-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: bold;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    position: relative;
+    border-left: 4px solid var(--yellow);
+}
+
+.testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: 0.5rem;
+    left: 1.5rem;
+    font-size: 5rem;
+    color: var(--light-green);
+    font-family: Georgia, serif;
+    line-height: 1;
+    opacity: 0.7;
+}
+
+/* Stats */
+.stat-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--light-green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--green);
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    text-align: center;
+    color: var(--dark-blue);
+    margin-top: 0.5rem;
+}
+
+/*--------------------------------------------------------------
+# About Page Styles
+--------------------------------------------------------------*/
+/* Team Cards */
+.team-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.team-img {
+    height: 250px;
+    object-fit: cover;
+}
+
+/* Mission Section */
+.mission-card {
+    border-left: 4px solid var(--green);
+}
+
+/* Timeline */
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--light-green);
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 2rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2.4rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--green);
+    top: 0.25rem;
+}
+
+.timeline-date {
+    font-weight: 600;
+    color: var(--green);
+    margin-bottom: 0.5rem;
+}
+
+/* Value Cards */
+.value-card {
+    height: 100%;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.value-icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--light-green);
+    color: var(--green);
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+/*--------------------------------------------------------------
+# Services Page Styles
+--------------------------------------------------------------*/
+/* Services Nav */
+.services-nav {
+    position: sticky;
+    top: 76px;
+    z-index: 99;
+    background-color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-pills .nav-link {
+    color: var(--dark-blue);
+    border-radius: 50rem;
+    padding: 0.5rem 1.5rem;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--green);
+    color: white;
+}
+
+.nav-pills .nav-link:hover:not(.active) {
+    background-color: var(--light-green);
+    color: var(--dark-blue);
+}
+
+/* Service Cards */
+.service-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.service-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Features */
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.feature-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: bold;
+}
+
+/* Process */
+.process-step {
+    position: relative;
+    padding-left: 3rem;
+    margin-bottom: 2.5rem;
+}
+
+.process-step::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 30px;
+    bottom: -30px;
+    width: 2px;
+    background-color: var(--light-green);
+}
+
+.process-step:last-child::before {
+    display: none;
+}
+
+.step-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    background-color: var(--green);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+# Responsive Adjustments
+--------------------------------------------------------------*/
+@media (max-width: 768px) {
+    .nav-link {
+        margin: 5px 0;
+    }
+    
+    .stat-circle {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1rem;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .process-step {
+        padding-left: 2.5rem;
+    }
+    
+    .timeline {
+        padding-left: 1.5rem;
+    }
+    
+    .timeline-dot {
+        left: -1.9rem;
+        width: 16px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .benefit-icon, .value-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+    
+    .team-img {
+        height: 200px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Dashboard Styles
+--------------------------------------------------------------*/
+/* Main dashboard container */
+.dashboard-container {
+    background-color: var(--light-bg);
+}
+
+/* Dashboard cards */
+.dashboard-card {
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 10px;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard navigation */
+.dashboard-nav .nav-link {
+    color: var(--dark-blue);
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    transition: all 0.2s ease;
+}
+
+.dashboard-nav .nav-link:hover {
+    background-color: rgba(11, 110, 79, 0.1);
+    color: var(--green);
+}
+
+.dashboard-nav .nav-link.active {
+    background-color: var(--light-green);
+    color: var(--green);
+    font-weight: 600;
+}
+
+.dashboard-nav .nav-link i {
+    width: 24px;
+    text-align: center;
+    margin-right: 8px;
+}
+
+/* Stat cards */
+.stat-card {
+    border-radius: 10px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.stat-card.primary {
+    background-color: var(--green);
+    color: white;
+}
+
+.stat-card.secondary {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+}
+
+.stat-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* Booking cards */
+.booking-date {
+    background-color: var(--light-green);
+    color: var(--green);
+    text-align: center;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booking-date .day {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.booking-date .month {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.booking-details {
+    padding: 15px;
+}
+
+.booking-status {
+    display: inline-block;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.booking-status.confirmed {
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+}
+
+.booking-status.pending {
+    background-color: rgba(0,0,0,0.1);
+    color: var(--dark-blue);
+}
+
+.booking-status.completed {
+    background-color: var(--green);
+    color: white;
+}
+
+/* Progress bars */
+.impact-progress {
+    height: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.impact-progress .progress-bar {
+    border-radius: 5px;
+}
+
+.impact-progress.carbon .progress-bar {
+    background-color: var(--green);
+}
+
+.impact-progress.savings .progress-bar {
+    background-color: var(--yellow);
+}
+
+/* User avatar */
+.user-avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--green);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 auto 15px;
+}
+
+/*Login Page input field*/
+
+.login-page-input{
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+}
+

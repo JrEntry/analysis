@@ -1,0 +1,86 @@
+      /* Need to keep these colors in my pocket */
+      :root {
+        --yellow: #ECA400;
+        --light-bg: #F5F0F6;
+        --dark-blue: #16262E;
+        --geen: #0B6E4F;
+        --light-green: #C7F2A7;
+      }
+      
+      /* Navbar customization */
+      .bg-rolsa {
+        background-color: var(--light-bg) !important;
+      }
+      
+      .navbar-brand img {
+        height: 40px;
+      }
+      
+      .text-dark-rolsa {
+        color: var(--dark-blue) !important;
+      }
+      
+      .text-green-rolsa {
+        color: var(--geen) !important;
+      }
+      
+      
+      /* Carousel customization - (stackoverflow) */
+      .carousel-item {
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+      }
+      
+      .carousel-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      
+      .hero-title {
+        font-size: calc(2rem + 2vw); /* responsive font size */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+      
+      /* This section needs customization */
+      .bg-dark-rolsa {
+        background-color: var(--dark-blue);
+      }
+      
+      .text-yellow-rolsa {
+        color: var(--yellow);
+      }
+      
+      /* Links in footer */
+      .footer-link {
+        color: var(--light-green);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      
+      .footer-link:hover {
+        color: var(--yellow);
+      }
+      
+      /* Social links in footer */
+      .social-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        background-color: #243c47;
+        color: white;
+        border-radius: 50%;
+        margin-right: 10px;
+        transition: background-color 0.3s;
+      }
+      
+      .social-link:hover {
+        background-color: var(--geen);
+      }
